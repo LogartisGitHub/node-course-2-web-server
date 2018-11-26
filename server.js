@@ -50,6 +50,13 @@ app.get('/about', (req, res) =>{
     }); 
 });
 
+app.get('/projects', (req, res) =>{
+    res.render('projects.hbs', {
+        pageTitle: 'My portfolio'
+    }); 
+});
+
+
 app.get('/bad', (req, res) =>{
     res.send({
         ErrorMessage: 'Error'
